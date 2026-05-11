@@ -43,7 +43,9 @@ profile = "black"
 packages = ["src/mongo_mcp"]
 
 [[tool.uv.index]]
-default = true
+name = "pypi"
+url = "https://pypi.org/simple"
+default = true 
 
 [dependency-groups]
 dev = [

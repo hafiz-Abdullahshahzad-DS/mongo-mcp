@@ -724,7 +724,7 @@ def start_server() -> None:
     """Start the MCP server with stdio transport."""
     try:
         # 使用FastMCP的run方法，指定stdio传输方式
-        app.run(transport="stdio")
+        app.run(transport="sse", port=8000)
     except Exception as e:
         logger.error(f"Failed to start MCP server: {e}")
         close_connection()
